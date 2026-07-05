@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- [if lte IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!-- [if IE 7]> <html class="no-js lt-ie9 lt-ie8 ie7"> <![endif]-->
+<!-- [IF IE 8]> <html class="no-js lt-ie9 ie8"> <![endif]-->
+<!-- [if gt IE 8]> <!-->
+<html class="no-js">
+<!-- <![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Engine Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+            background: #0a0a12;
+            color: #e8e0e0;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 720px;
+            width: 100%;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #4332ca, #7952c3, #e8516b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: #9aa5b5;
+            margin-bottom: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280rem, 1fr));
+            gap: 1.25rem;
+            margin: 2rem 0;
+        }
+
+        .card {
+            background: #151525;
+            border: 1px solid #2a2840;
+            border-radius: 12px;
+            padding: 1.5rem;
+            text-align: left;
+            transition: border 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .card:hover {
+            border: 1px solid #6b5ac6;
+            box-shadow: 0 0 20px rgba(99, 60, 230, 0.15);
+        }
+
+        .card h3 {
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+            color: #e0e8e0;
+        }
+
+        .card p {
+            color: #9aa5b5;
+            font-size: 0.875rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: #2a2840;
+            color: #b8b5db;
+            margin-top: 0.5rem;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            font-size: 0.875rem;
+            color: #555;
+
+        }
+
+        .footer a {
+            color: #7952c3;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            color: #e8516b;
+        }
+
+        .status-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: #22c55e;
+            margin-right: 0.5rem;
+            animation: pulse 2s infinite;
+        }
+
+        @-webkit-keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.4; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div style="margin-bottom: 1rem;">
+            <span class="status-dot"></span>
+            <span style="font-size: 0.875rem; color: #9aa5b5;">Demo Project</span>
+        </div>
+
+        <h1>Marketing Engine</h1>
+        <p class="subtitle">A demonstration project showcasing modular marketing automation capabilities.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>📊 Email Campaigns</h3>
+                <p>Automated email outreach with templates, segmentation, and performance tracking.</p>
+                <div><span class="badge">Planned</span></div>
+            </div>
+
+            <div class="card">
+                <h3>✬ Lead Generation</h3>
+                <p>Ai-powered lead scoring, deduplication detection, and enrichment pipelines.</p>
+                <div><span class="badge">In Development</span></div>
+            </div>
+
+            <div class="card">
+                <h3>❤️ Analytics</h3>
+                <p>Real-time dashboards, CRM integration, and conversion attribution.</p>
+                <div><span class="badge">Design</span></div>
+            </div>
+
+            <div class="card">
+                <h3>🔹 Social Scheduling</h3>
+                <p>Automated cross-platform posting with content calendars.</p>
+                <div><span class="badge">Todo</span></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built with ❤️ <a href="https://github.com/infoinletdevEight/marketing-engine-demo">infoinletdevEight/marketing-engine-demo</a>
+        </div>
+    </div>
+</body>
+</html>
